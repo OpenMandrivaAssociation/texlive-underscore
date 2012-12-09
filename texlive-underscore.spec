@@ -51,3 +51,16 @@ in maths mode is not affected.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100607-2
++ Revision: 757284
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100607-1
++ Revision: 719847
+- texlive-underscore
+- texlive-underscore
+- texlive-underscore
+

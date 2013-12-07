@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-underscore
 Version:	20100607
-Release:	4
+Release:	5
 Summary:	Control the behaviour of "_" in text
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/underscore

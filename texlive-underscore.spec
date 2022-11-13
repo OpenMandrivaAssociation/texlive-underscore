@@ -1,18 +1,12 @@
-# revision 18261
-# category Package
-# catalog-ctan /macros/latex/contrib/underscore
-# catalog-date 2010-06-07 08:23:51 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-underscore
-Version:	20190228
+Version:	18261
 Release:	1
 Summary:	Control the behaviour of "_" in text
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/underscore
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/underscore.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/underscore.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/underscore.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/underscore.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ text, '_' itself behaves as \textunderscore (the behaviour of _
 in maths mode is not affected.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -44,23 +38,10 @@ in maths mode is not affected.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100607-2
-+ Revision: 757284
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100607-1
-+ Revision: 719847
-- texlive-underscore
-- texlive-underscore
-- texlive-underscore
-

@@ -1,6 +1,6 @@
 Name:		texlive-underscore
 Version:	18261
-Release:	1
+Release:	2
 Summary:	Control the behaviour of "_" in text
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/underscore

@@ -3,7 +3,7 @@ Version:	18261
 Release:	2
 Summary:	Control the behaviour of "_" in text
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/underscore
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/underscore
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/underscore.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/underscore.doc.r%{version}.tar.xz
